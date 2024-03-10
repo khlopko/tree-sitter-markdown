@@ -28,6 +28,6 @@ let package = Package(
                     "src/scanner.cc",
                 ],
                 publicHeadersPath: "bindings/swift",
-                cSettings: [.headerSearchPath("src")])
+                cSettings: [.headerSearchPath("src"), .headerSearchPath("src/tree-sitter-markdown")])
     ]
 )
